@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>declarative.space hackathon @ PlanetNix 2026</title>
+<meta name="description" content="Nix permits sovereign computing. Now make it for everyone. March 5-6, 2026 in Pasadena, CA.">
+
+<!-- OpenGraph -->
+<meta property="og:title" content="declarative.space hackathon @ PlanetNix 2026">
+<meta property="og:description" content="Nix permits sovereign computing. Now make it for everyone. March 5-6, 2026 in Pasadena, CA.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://declarative.space">
+<!-- TODO: add og:image for social sharing preview -->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="declarative.space hackathon @ PlanetNix 2026">
+<meta name="twitter:description" content="Nix permits sovereign computing. Now make it for everyone.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230a0e17'/%3E%3Ctext x='4' y='22' font-family='monospace' font-size='18' font-weight='700' fill='%23e8863a'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-blob"></div>
+<div class="bg-blob-2"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <span class="logo-prompt">&gt;_</span>
+      declarative<span class="dot-sep">.</span>space
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">MENU</button>
+    <ul class="nav-links">
+      <li><a href="#about"><span class="nav-num">01</span> About</a></li>
+      <li><a href="#details"><span class="nav-num">02</span> Details</a></li>
+      <li><a href="#judging"><span class="nav-num">03</span> Judging</a></li>
+      <li><a href="#prizes"><span class="nav-num">05</span> Prizes</a></li>
+      <li><a href="#participate" class="nav-cta">Register &rarr;</a></li>
+    </ul>
+  </div>
+</header>
+
+<main class="main">
+
+  <!-- STATUS -->
+  <div class="status-bar">
+    STATUS // <span class="status-dot"></span> hackathon_active &nbsp;|&nbsp; PlanetNix 2026 &nbsp;|&nbsp; Pasadena, CA
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-label">HACKATHON_</div>
+    <h1>declarative<span class="accent">.</span>space<br><span class="accent">hackathon</span><span class="accent">.</span></h1>
+    <p class="hero-sub">Nix permits sovereign computing. Now make it for everyone.</p>
+    <p class="hero-meta">March 5&ndash;6, 2026 &middot; <a href="https://planetnix.com">PlanetNix</a> &middot; Pasadena, CA</p>
+    <a href="#participate" class="hero-cta">Register your team &rarr;</a>
+  </section>
+
+  <!-- ABOUT -->
+  <div class="section-num" id="about">01 ABOUT</div>
+  <div class="section-cmd"><span class="prompt">$</span> cat ./README.md</div>
+
+  <div class="prose-block">
+    <p>Nix already gives you reproducible builds, declarative configuration, and full control over your software stack. The foundations for sovereign computing are here&mdash;but most people can't use them.</p>
+    <p>This hackathon challenges you to close that gap. Build tools, interfaces, and systems that make Nix-powered sovereign computing accessible to everyone&mdash;not just the experts.</p>
+  </div>
+
+  <!-- DETAILS -->
+  <div class="section-num" id="details">02 DETAILS</div>
+  <div class="section-cmd"><span class="prompt">$</span> cat ./event.md</div>
+
+  <div class="value-grid">
+    <div class="value-card">
+      <h4>When &amp; where</h4>
+      <p>March 5&ndash;6, 2026 at <a href="https://planetnix.com">PlanetNix</a> @ <a href="https://www.visitpasadena.com/convention-center/">Pasadena Convention Center</a>, 300 E Green St, Pasadena, CA 91101.</p>
+    </div>
+    <div class="value-card">
+      <h4>Teams</h4>
+      <p>1&ndash;4 people. Form a team on-site or come solo and find one. All skill levels welcome.</p>
+    </div>
+    <div class="value-card">
+      <h4>Format</h4>
+      <p>Build, then demo. Each team gets a short live demo slot. Show working software, not slides.</p>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-step">
+      <div class="step-label">Day 1 &mdash; Thursday</div>
+      <h4>Teams form, hacking begins</h4>
+      <p>Show up at PlanetNix on March 5. Find your team, pick a problem, start building.</p>
+    </div>
+    <div class="timeline-step">
+      <div class="step-label">Day 2 &mdash; Friday</div>
+      <h4>Demos at 4 pm, prizes after</h4>
+      <p>Hacking continues through the day. At 4 pm, we call each team by name to demo. Jury deliberates, prizes awarded.</p>
+    </div>
+  </div>
+
+  <!-- JUDGING -->
+  <div class="section-num" id="judging">03 JUDGING</div>
+  <div class="section-cmd"><span class="prompt">$</span> cat ./criteria.md</div>
+
+  <div class="criteria-bar">
+    <div class="criteria-segment" style="flex: 3" data-tooltip="Does this meaningfully give users ownership or control of their computing?">
+      <span class="criteria-label">Sovereignty</span>
+      <span class="criteria-pct">30%</span>
+    </div>
+    <div class="criteria-segment" style="flex: 3" data-tooltip="Could a non-expert actually use this? Is the UX considered?">
+      <span class="criteria-label">Usability</span>
+      <span class="criteria-pct">30%</span>
+    </div>
+    <div class="criteria-segment" style="flex: 2" data-tooltip="Is the idea novel or does it approach a known problem in a fresh way?">
+      <span class="criteria-label">Creativity</span>
+      <span class="criteria-pct">20%</span>
+    </div>
+    <div class="criteria-segment" style="flex: 2" data-tooltip="Does it work? How polished is the demo?">
+      <span class="criteria-label">Execution</span>
+      <span class="criteria-pct">20%</span>
+    </div>
+  </div>
+
+  <!-- IDEAS -->
+  <div class="section-num" id="ideas">04 IDEAS</div>
+  <div class="section-cmd"><span class="prompt">$</span> ls -la ./ideas/</div>
+
+  <div class="ideas-grid">
+    <div class="idea-card">
+      <p>A NixOS appliance your parents could run as their home server</p>
+    </div>
+    <div class="idea-card">
+      <p>What if <code>nix build</code> could prove a binary matches its source&mdash;and a non-developer could verify it?</p>
+    </div>
+    <div class="idea-card">
+      <p>A mesh cache that shares Nix store paths over the local network at a conference</p>
+    </div>
+    <div class="idea-card">
+      <p>What if your phone could cryptographically attest that its OS was built from a public config?</p>
+    </div>
+    <div class="idea-card">
+      <p>A declarative personal cloud: email, files, calendar, contacts, all defined in one flake</p>
+    </div>
+    <div class="idea-card">
+      <p>Peer-to-peer secret sharing for teams&mdash;no third-party vault service</p>
+    </div>
+  </div>
+
+  <p class="muted-note">These are sparks, not boundaries. Build whatever you want. The only test: <em>does it give a real person more control over their own computing?</em></p>
+
+  <!-- PRIZES -->
+  <div class="section-num" id="prizes">05 PRIZES</div>
+  <div class="section-cmd"><span class="prompt">$</span> jq . prizes.json</div>
+
+  <p class="muted-note">All prizes are per team unless noted otherwise.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Place</th>
+        <th>Prize</th>
+        <th>Specs</th>
+        <th>Qty</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3" class="place-cell">1st</td>
+        <td><a href="https://shop.mntre.com/products/mnt-reform">MNT Reform</a></td>
+        <td>i.MX8MQ processor</td>
+        <td>1x</td>
+      </tr>
+      <tr>
+        <td>64 GB DDR5 SODIMM RAM</td>
+        <td>32 GB Crucial 5600 MHz</td>
+        <td>2x</td>
+      </tr>
+      <tr>
+        <td>32 GB DDR5 SODIMM RAM</td>
+        <td>16 GB Crucial 5600 MHz</td>
+        <td>2x</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="place-cell">2nd</td>
+        <td>128 GB DDR5 SODIMM RAM</td>
+        <td>32 GB Crucial 5600 MHz</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.yubico.com/product/yubikey-5-nfc/">YubiKey</a></td>
+        <td>NFC USB-C</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="place-cell">3rd</td>
+        <td>64 GB DDR5 SODIMM RAM</td>
+        <td>16 GB Crucial 5600 MHz</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.yubico.com/product/yubikey-5-nfc/">YubiKey</a></td>
+        <td>NFC USB-C</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td rowspan="3" class="place-cell">4th</td>
+        <td><a href="https://www.ifixit.com/products/pro-tech-toolkit">iFixit Pro Kit</a></td>
+        <td>64x S2 steel bits &amp; more</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.yubico.com/product/yubikey-5-nfc/">YubiKey</a></td>
+        <td>NFC USB-C</td>
+        <td>4x</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.newegg.com/">Newegg Gift Card</a></td>
+        <td>$100</td>
+        <td>1x</td>
+      </tr>
+      <tr>
+        <td class="place-cell">5th</td>
+        <td><a href="https://www.ifixit.com/products/pro-tech-toolkit">iFixit Pro Kit</a></td>
+        <td>64x S2 steel bits &amp; more</td>
+        <td>4x</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- PARTICIPATE -->
+  <section class="cta-section" id="participate">
+    <div class="cmd">$ ./register.sh</div>
+    <h2>Ready to hack?</h2>
+    <p>Register your team by creating a GitHub issue. We will call teams by name on Friday at 4 pm for demos.</p>
+    <a href="https://github.com/numtide/planetnix-hackathon/issues/new?template=submission.yml" class="cta-btn">Register your team &rarr;</a>
+    <div class="cta-direct">Questions? Find us at the <a href="https://numtide.com">Numtide</a> booth during <a href="https://planetnix.com">PlanetNix</a>.</div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-copy">Organized by <a href="https://numtide.com">Numtide</a> and <a href="https://clan.lol">Clan</a>.</div>
+  <ul class="footer-links">
+    <li><a href="https://github.com/numtide/planetnix-hackathon">GitHub</a></li>
+    <li><a href="https://planetnix.com">PlanetNix</a></li>
+    <li><a href="https://numtide.com">Numtide</a></li>
+    <li><a href="https://clan.lol">Clan</a></li>
+  </ul>
+  <div class="footer-session">&gt; hackathon_active | march_2026 | exit(0)</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+name: Register your team
+description: Register your team for the declarative.space hackathon
+title: "Team: "
+labels: ["submission"]
+body:
+  - type: input
+    id: team-name
+    attributes:
+      label: Team name
+      description: We will call your team by this name on Friday at 4 pm for demos.
+      placeholder: e.g. The Sovereign Builders
+    validations:
+      required: true
+
+  - type: textarea
+    id: team-members
+    attributes:
+      label: Team members
+      description: Names and GitHub handles of all team members (1-4 people)
+      placeholder: |
+        - Alice (@alice)
+        - Bob (@bob)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project description
+      description: What are you building? What problem does it solve?
+      placeholder: Describe your project...
+
+  - type: textarea
+    id: sovereignty
+    attributes:
+      label: Sovereignty angle
+      description: How does this give users real ownership or control of their computing?
+      placeholder: Explain how your project advances sovereign computing...
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact
+      description: Email or other way to reach your team if we need to follow up
+      placeholder: e.g. alice@example.com
+    validations:
+      required: true
+
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else
+      description: Any additional context or notes
