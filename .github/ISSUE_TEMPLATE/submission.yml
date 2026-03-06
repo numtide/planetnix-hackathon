@@ -8,7 +8,7 @@ body:
     attributes:
       label: Team name
       description: We will call your team by this name on Friday at 4 pm for demos.
-      placeholder: e.g. The Sovereign Builders
+      placeholder: e.g. The Self-Hosters
     validations:
       required: true
 
@@ -31,11 +31,11 @@ body:
       placeholder: Describe your project...
 
   - type: textarea
-    id: sovereignty
+    id: self-hosting
     attributes:
-      label: Sovereignty angle
-      description: How does this give users real ownership or control of their computing?
-      placeholder: Explain how your project advances sovereign computing...
+      label: Self-hosting angle
+      description: How does this help users run services themselves instead of depending on third parties?
+      placeholder: Explain how your project advances self-hosting...
 
   - type: input
     id: contact
